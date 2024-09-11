@@ -1,3 +1,6 @@
+
+// problem-01
+
 function calculateTax(income, expenses) {
     if(typeof income !== 'number' || typeof expenses !== 'number' || income < 0 || expenses < 0){
         return 'Invalid Input'
@@ -13,7 +16,7 @@ function calculateTax(income, expenses) {
 console.log(calculateTax(10000, 3000));
 
 
-
+// problem-02
 function sendNotification(email) {
     if(email.includes('@')){
         let name =email.split('@')[0]
@@ -28,7 +31,7 @@ function sendNotification(email) {
 console.log(sendNotification('farhan34@yahoo.com'))
 
 
-
+// problem-03
 function checkDigitsInName(name) {
     if(typeof name !== 'string'){
         return 'Invalid Input'
@@ -46,7 +49,7 @@ console.log(checkDigitsInName('Raj123'));
 
 
 
-
+// problem-04
 function calculateFinalScore(obj) {
     if(typeof obj !== 'object' ){
         return "Invalid Input"
@@ -66,7 +69,7 @@ function calculateFinalScore(obj) {
 
 console.log(calculateFinalScore({ name: "Rajib", testScore: 45,  schoolGrade: 25, isFFamily : true  } ))
 
-
+// problem-05
 function  waitingTime(waitingTimes  , serialNumber) {
     if(!Array.isArray(waitingTimes) || typeof serialNumber !== 'number'){
         return 'Invalid Input'
